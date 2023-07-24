@@ -1,0 +1,15 @@
+{
+    "short_name": "✊ 🖐 ✌",
+    "name": "Rock Paper Scissors",
+    "icons": [
+      {
+        "src": "./assets/icon.svg",
+        "type": "image/svg+xml",
+        "sizes": "512x512"
+      }
+    ],
+    "background_color": "#CCC",
+    "display": "standalone",
+    "theme_color": "#CCC",
+    "description": ""
+  }
