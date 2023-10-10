@@ -50,8 +50,8 @@ body {
 
 .result-score {
   margin-left: .1rem;
-  font-size: .7rem;
-  color: #333;
+  font-size: 1.5rem;
+  color: #403c3c;
   user-select: none;
 }
 
