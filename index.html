@@ -34,7 +34,9 @@
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
-          .register("/ServiceWorker.js")
+          .register(
+            "https://mekanhaji.github.io/Rock-Paper-Scissors/ServiceWorker.js"
+          )
           .then((registration) => {
             console.log(
               "Service Worker registered with scope:",
