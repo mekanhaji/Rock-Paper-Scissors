@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="manifest" href="manifest.json" />
-  <title>Rock Paper Sciss</title>
-  <link rel="stylesheet" href="CodeFiles/style.css">
-  <script src="CodeFiles/script.js" defer></script>
-</head>
-<body>
-  <div class="selections">
-    <button class="selection" data-selection="rock">✊</button>
-    <button class="selection" data-selection="paper">✋</button>
-    <button class="selection" data-selection="scissors"><img src="assets/victory-hand.png" alt="✌️"></button>
-  </div>
-  
-  <div class="results">
-    
-    <div>
-      You
-      <span class="result-score" data-your-score>0</span>
-    </div>
-    
-    <div data-final-column>
-      Computer
-      <span class="result-score" data-computer-score>0</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="src/script.js" defer></script>
+  </head>
+  <body>
+    <div class="selections">
+      <button class="selection" data-selection="rock">✊</button>
+      <button class="selection" data-selection="paper">✋</button>
+      <button class="selection" data-selection="scissors">
+        <img src="assets/victory-hand.png" alt="✌️" />
+      </button>
     </div>
 
-  </div>
-</body>
+    <div class="results">
+      <div>
+        You
+        <span class="result-score" data-your-score>0</span>
+      </div>
+
+      <div data-final-column>
+        Computer
+        <span class="result-score" data-computer-score>0</span>
+      </div>
+    </div>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/ServiceWorker.js")
+          .then((registration) => {
+            console.log(
+              "Service Worker registered with scope:",
+              registration.scope
+            );
+          })
+          .catch((error) => {
+            console.error("Service Worker registration failed:", error);
+          });
+      }
+    </script>
+  </body>
 </html>
