@@ -4,6 +4,13 @@ This project is a web-based implementation of the classic game "Rock Paper Sciss
 
 ## Features
 
+> v.1.1.0
+
+- New favicon
+- Now works offline
+
+> v1.0.0
+
 - User-friendly interface for selecting rock, paper, or scissors.
 - Random selection by the computer as the opponent.
 - Real-time updates of the score after each round.
