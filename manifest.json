@@ -1,7 +1,7 @@
 {
   "short_name": "✊ 🖐 ✌",
   "name": "Rock Paper Scissors",
-  "start_url": "/",
+  "start_url": "https://mekanhaji.github.io/Rock-Paper-Scissors/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
