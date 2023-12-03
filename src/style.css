@@ -1,14 +1,14 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: #CCC;
+  background-color: #ccc;
   position: relative;
   height: 90vh;
 }
-  
+
 .selections {
   height: 60px;
   width: 80%;
@@ -48,15 +48,26 @@ body {
   user-select: none;
 }
 
+.display {
+  max-height: 75%;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.display::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 .result-score {
-  margin-left: .1rem;
+  margin-left: 0.1rem;
   font-size: 1.5rem;
   color: #403c3c;
   user-select: none;
 }
 
 .result-selection {
-  opacity: .5;
+  opacity: 0.5;
   user-select: none;
 }
 
@@ -64,7 +75,7 @@ body {
   opacity: 1;
   font-size: 1.5rem;
 }
-img{
+img {
   height: 30px;
   margin: 0;
 }
